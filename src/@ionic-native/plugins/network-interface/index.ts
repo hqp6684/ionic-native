@@ -55,4 +55,14 @@ export class NetworkInterface extends IonicNativePlugin {
   getCarrierIPAddress(): Promise<string> {
     return;
   }
+
+  /**
+   * Get the network SSID
+   * @param success {Function} Callback used when successful
+   * @param error {Function} Callback used when failure
+   */
+  @Cordova()
+  getSSID(): Promise<string> {
+    return;
+  }
 }
